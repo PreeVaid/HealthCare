@@ -1,197 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>PREEVAID - Shipping Policy</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PREEVAID - Shipping Policy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    body {
-      background-color: #f5f5f5;
-      color: #333;
-    }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    header {
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('images/background.jpeg');
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/background.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
 
-    header .logo {
-      font-size: 3rem;
-      font-weight: 700;
-    }
+        header .logo {
+            font-size: 3rem;
+            font-weight: 700;
+        }
 
-    header .tagline {
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
+        header .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
 
-    header .product-title {
-      font-size: 2.5rem;
-      margin: 10px 0;
-      color: #4CAF50;
-    }
+        header .product-title {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            color: #4CAF50;
+        }
 
-    header .product-subtitle {
-      font-size: 1.2rem;
-    }
+        header .product-subtitle {
+            font-size: 1.2rem;
+        }
 
-    .content {
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
-    }
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
 
-    .content h1, .content h2 {
-      color: #4CAF50;
-      margin-top: 20px;
-    }
+        .content h1,
+        .content h2 {
+            color: #4CAF50;
+            margin-top: 20px;
+        }
 
-    .content p, .content li {
-      margin-bottom: 10px;
-      text-align: left;
-    }
+        .content p,
+        .content li {
+            margin-bottom: 10px;
+            text-align: left;
+        }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #4CAF50;
-      color: white;
-      border-radius: 10px;
-      max-width: 1200px;
-      margin: 0 auto 20px auto;
-    }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 10px;
+            max-width: 1200px;
+            margin: 0 auto 20px auto;
+        }
 
-    footer p {
-      margin: 5px 0;
-    }
+        footer p {
+            margin: 5px 0;
+        }
 
-    footer a img {
-      width: 28px;
-      height: 28px;
-      margin: 0 10px;
-    }
+        footer a img {
+            width: 28px;
+            height: 28px;
+            margin: 0 10px;
+        }
 
-    a {
-      color: #4CAF50;
-      text-decoration: none;
-    }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
 
-    a:hover {
-      text-decoration: underline;
-    }
 
-    @media (max-width: 768px) {
-      header .logo {
-        font-size: 2rem;
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header .logo {
+                font-size: 2rem;
+            }
+
+            header .tagline {
+                font-size: 1.2rem;
+            }
+
+            header .product-title {
+                font-size: 1.8rem;
+            }
+        }
+          @media (max-width: 480px) {
+      .content a {
+        font-size: 14px;
       }
-      header .tagline {
-        font-size: 1.2rem;
-      }
-      header .product-title {
-        font-size: 1.8rem;
-      }
     }
-  </style>
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <!-- HEADER -->
-    <header>
-      <div class="logo">PREEVAID</div>
-      <div class="tagline">Ayurvedic Science for Modern Life</div>
-      <h1 class="product-title">SHIPPING POLICY</h1>
-      <p class="product-subtitle">Timely Delivery & Hassle-Free Shipping</p>
-    </header>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="logo">PREEVAID</div>
+            <div class="tagline">Ayurvedic Science for Modern Life</div>
+            <h1 class="product-title">SHIPPING POLICY</h1>
+            <p class="product-subtitle">Timely Delivery & Hassle-Free Shipping</p>
+        </header>
 
-    <!-- CONTENT -->
-    <div class="content">
-      <h1>Shipping Policy</h1>
-      <p>We ensure timely delivery of our products across India. Below are our shipping guidelines:</p>
+        <!-- CONTENT -->
+        <div class="content">
+            <h1>Shipping Policy</h1>
+            <p>We ensure timely delivery of our products across India. Below are our shipping guidelines:</p>
 
-      <h2>1. Order Processing</h2>
-      <p>Orders are processed within <strong>1–2 business days</strong> after confirmation.</p>
+            <h2>1. Order Processing</h2>
+            <p>Orders are processed within <strong>1–2 business days</strong> after confirmation.</p>
 
-      <h2>2. Shipping Time</h2>
-      <ul>
-        <li>Standard Delivery: <strong>5–7 business days</strong></li>
-        <li>Express Delivery: <strong>2–3 business days</strong> (additional charges apply)</li>
-      </ul>
+            <h2>2. Shipping Time</h2>
+            <ul>
+                <li>Standard Delivery: <strong>5–7 business days</strong></li>
+                <li>Express Delivery: <strong>2–3 business days</strong> (additional charges apply)</li>
+            </ul>
 
-      <h2>3. Shipping Charges</h2>
-      <ul>
-        <li>Free shipping on orders above ₹999</li>
-        <li>Orders below this amount may have a nominal shipping charge.</li>
-      </ul>
+            <h2>3. Shipping Charges</h2>
+            <ul>
+                <li>Free shipping on orders above ₹999</li>
+                <li>Orders below this amount may have a nominal shipping charge.</li>
+            </ul>
 
-      <h2>4. Delivery Partners</h2>
-      <p>We work with trusted courier partners to ensure safe delivery of your order.</p>
+            <h2>4. Delivery Partners</h2>
+            <p>We work with trusted courier partners to ensure safe delivery of your order.</p>
 
-      <h2>5. Delayed Delivery</h2>
-      <p>Unforeseen circumstances (weather, lockdowns, strikes) may cause delays. We will notify you in such cases.</p>
+            <h2>5. Delayed Delivery</h2>
+            <p>Unforeseen circumstances (weather, lockdowns, strikes) may cause delays. We will notify you in such
+                cases.</p>
 
-      <h2>6. Incorrect Address</h2>
-      <p>If an incorrect address is provided, we are not responsible for lost shipments. Customers must ensure accurate details.</p>
+            <h2>6. Incorrect Address</h2>
+            <p>If an incorrect address is provided, we are not responsible for lost shipments. Customers must ensure
+                accurate details.</p>
 
-      <h2>Contact Support</h2>
-      <p>For tracking your order or any queries, contact us at <a href="mailto:preevaidhealthcare@gmail.com">preevaidhealthcare@gmail.com</a>.</p>
+            <h2>Contact Support</h2>
+            <p>For tracking your order or any queries, contact us at<br>
+                <a href="mailto:preevaidhealthcare@gmail.com">preevaidhealthcare@gmail.com</a>.
+            </p>
+        </div>
+
+        <!-- 🆕 Legal Section -->
+        <div class="container">
+            <section class="legal-section"
+                style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
+                <h2 style="text-align: center; color: #4CAF50; font-size: 2rem; margin-bottom: 20px;">Legal</h2>
+                <ul
+                    style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 1rem;">
+                    <li><a href="/index.html" style="color: #333; text-decoration: none; font-weight: 500;">Home</a>
+                    </li>
+                    <li><a href="/terms-and-conditions.html"
+                            style="color: #333; text-decoration: none; font-weight: 500;">Terms &amp; Conditions</a>
+                    </li>
+                    <li><a href="/privacy-policy.html"
+                            style="color: #333; text-decoration: none; font-weight: 500;">Privacy Policy</a></li>
+                    <li><a href="/shipping-policy.html"
+                            style="color: #333; text-decoration: none; font-weight: 500;">Shipping Policy</a></li>
+                    <li><a href="/disclaimer.html"
+                            style="color: #333; text-decoration: none; font-weight: 500;">Disclaimer</a></li>
+                    <li><a href="/cancellation-refund-policy.html"
+                            style="color: #333; text-decoration: none; font-weight: 500;">Cancellation &amp; Refund
+                            Policy</a></li>
+                </ul>
+            </section>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2025 PREEVAID Healthcare. All Rights Reserved.</p>
+            <p>100% Ayurvedic | Chemical Free | Made in India</p>
+            <p style="margin-top: 15px; font-weight: 500;">Follow us on:</p>
+            <div style="margin-top: 5px;">
+                <a href="https://www.instagram.com/preevaid" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61577633934416" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
+                </a>
+            </div>
+        </footer>
     </div>
-
- <!-- 🆕 Legal Section -->
-<div class="container">
-  <section class="legal-section" style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);">
-    <h2 style="text-align: center; color: #4CAF50; font-size: 2rem; margin-bottom: 20px;">Legal</h2>
-    <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; font-size: 1rem;">
-      <li><a href="/index.html" style="color: #333; text-decoration: none; font-weight: 500;">Home</a></li>
-      <li><a href="/terms-and-conditions.html" style="color: #333; text-decoration: none; font-weight: 500;">Terms &amp; Conditions</a></li>
-      <li><a href="/privacy-policy.html" style="color: #333; text-decoration: none; font-weight: 500;">Privacy Policy</a></li>
-      <li><a href="/shipping-policy.html" style="color: #333; text-decoration: none; font-weight: 500;">Shipping Policy</a></li>
-      <li><a href="/disclaimer.html" style="color: #333; text-decoration: none; font-weight: 500;">Disclaimer</a></li>
-      <li><a href="/cancellation-refund-policy.html" style="color: #333; text-decoration: none; font-weight: 500;">Cancellation &amp; Refund Policy</a></li>
-    </ul>
-  </section>
-</div>
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2025 PREEVAID Healthcare. All Rights Reserved.</p>
-      <p>100% Ayurvedic | Chemical Free | Made in India</p>
-      <p style="margin-top: 15px; font-weight: 500;">Follow us on:</p>
-      <div style="margin-top: 5px;">
-        <a href="https://www.instagram.com/preevaid" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=61577633934416" target="_blank">
-          <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook">
-        </a>
-      </div>
-    </footer>
-  </div>
 </body>
+
 </html>
