@@ -181,22 +181,22 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        .yogi-section {
-               background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpeg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            color: white;
-            padding: 40px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            flex-direction: row-reverse;
-            gap: 30px;
-        }
+.yogi-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+    height: auto; /* ✅ this line added */
+}
+
         
         .yogi-image {
             flex: 1;
@@ -319,6 +319,16 @@
                 columns: 1;
             }
         }
+        @media (max-width: 768px) {
+    .yogi-section {
+        flex-direction: column; /* Stack image & content vertically */
+        padding: 20px;
+    }
+    .yogi-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
     </style>
 </head>
 <body>
